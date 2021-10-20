@@ -4,8 +4,8 @@ public class Pferderennen {
     Pferd pferd;
     private int streckenLaenge;
     private int anzahlPferde;
-    private ArrayList<Pferd> pferde = new ArrayList<Pferd>();
-    private ArrayList<String> rangliste = new ArrayList<String>();
+    private ArrayList<Pferd> pferde = new ArrayList<>();
+    private ArrayList<String> rangliste = new ArrayList<>();
 
 
         public Pferderennen(int anzahlPferde, int streckenLaenge)
@@ -17,7 +17,7 @@ public class Pferderennen {
             //generate Pferde
             for(int i = 0; i < anzahlPferde; i++)
             {
-                pferd = new Pferd("Rudolf " + Integer.toString(pferde.size()),pferde.size());
+                pferd = new Pferd("Vithushan " + Integer.toString(pferde.size()),pferde.size());
                 pferde.add(pferd);
             }
 
