@@ -34,6 +34,9 @@ public class Pferderennen {
             for(int i = 0; i < pferd.getGerannteStrecke(); i++){
                 balken = balken + "*";
             }
+            if(pferd.getGerannteStrecke() == streckenLaenge){
+                balken = balken + " |";
+            }
             return balken;
         }
 
@@ -61,13 +64,14 @@ public class Pferderennen {
                             {
                                 rangliste.add(pferde.get(i).toString());
                                 pferde.get(i).setGerannteStrecke(streckenLaenge);
+
                             }
                     }
 
 
 
 
-                    System.out.println(pferde.get(i).toString() + gerannteStreckeAlsBalken(pferde.get(i)));
+                    System.out.println(pferde.get(i).toString() + gerannteStreckeAlsBalken(pferde.get(i)) );
                 }
             }
             System.out.println("");
@@ -88,6 +92,7 @@ public class Pferderennen {
             for(int i = 0; i < rangliste.size(); i++){
                 System.out.println("Auf Rang " + (i + 1) + ": " + rangliste.get(i) );
             }
+
 
         }
 
